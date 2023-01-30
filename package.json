@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "publish": "cd dist/ngrx-forms-material && npm publish --registry=https://registry.npmjs.com/"
   },
   "private": true,
   "dependencies": {

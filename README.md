@@ -2,6 +2,14 @@
 
 This project the compatibily between some element of [Angular Material](https://github.com/angular/components) and the library [Ngrx Forms](https://github.com/MrWolfZ/ngrx-forms).
 
+## Install
+
+```bash
+  npm i ngrx-forms-material
+```
+
+## Information
+
 It propose to fix :
 
 - [mat-datepicker](https://material.angular.io/components/datepicker/overview) :

@@ -1,24 +1,40 @@
-# NgrxFormsMaterial
+# Ngrx Forms Material
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.0.
+This project the compatibily between some element of [Angular Material](https://github.com/angular/components) and the library [Ngrx Forms](https://github.com/MrWolfZ/ngrx-forms).
 
-## Code scaffolding
+## Install
 
-Run `ng generate component component-name --project ngrx-forms-material` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngrx-forms-material`.
-> Note: Don't forget to add `--project ngrx-forms-material` or else it will be added to the default project in your `angular.json` file. 
+```bash
+  npm i ngrx-forms-material
+```
 
-## Build
+## Information
 
-Run `ng build ngrx-forms-material` to build the project. The build artifacts will be stored in the `dist/` directory.
+It propose to fix :
 
-## Publishing
+- [mat-datepicker](https://material.angular.io/components/datepicker/overview) :
+  - compatibility for elements with the following selector : ```input[ngrxFormControlState][matDatepicker]```
+  - management of minimum and maximum dates with **min** and **max** inputs
+  - converter for dates in ISO8601 with **NgrxDateToISO8601**, to use in the **ngrxValueConverter** directive on the field
+  - converter for dates in ISO8601 UTC with **NgrxDateToISO8601UTC**, to use in the **ngrxValueConverter** directive on the field
 
-After building your library with `ng build ngrx-forms-material`, go to the dist folder `cd dist/ngrx-forms-material` and run `npm publish`.
+- [mat-select](https://material.angular.io/components/select/overview) :
+  - compatibility for elements with the following selector : ```mat-select[ngrxFormControlState]```
+  - work for **multiple** selectors
 
-## Running unit tests
+- [mat-autocomplete](https://material.angular.io/components/autocomplete/overview) :
+  - compatibility for elements with the following selector : ```input[ngrxFormControlState][matAutocomplete]```
+  - management of minimum characters to activate autocomplete with **autocompleteMinChars** input
+  - propose **autocompleteValue** validator to use in **updateGroup** to validate the field
+  - propose **requiredAutocompleteValue** validator to use in **updateGroup** to validate the required field
+  - converter for autocomplete field with **NgrxAutocompleteConverter**, to use in the **ngrxValueConverter** directive on the field
 
-Run `ng test ngrx-forms-material` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- mat-error :
+  - compatibility for element with the following selector : ```[ngrxFormControlState]```
 
-## Further help
+Anyway, it gives to you some usefull store tools :
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- **createNgrxFormAdapter** : Adapter for ngrx-forms with a form id and an initial data
+- **getInitialFormState** : Retrieve the initial state of the form
+- **createInitialStateFactory** : Create the initial state of the form
+- **createSelectorsFactory** : Creating selectors to retrieve form information, like selectFormGroup, selectFormControls, selectFormGroupData, selectLastFocusedAutocompleteField and selectLastFocusedAutocompleteData
