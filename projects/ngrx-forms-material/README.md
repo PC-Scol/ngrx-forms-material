@@ -11,7 +11,8 @@ This project enhances compatibility between [Angular Material](https://github.co
 ## Usage
 
 - Import **NgrxFormsMaterialModule** in your app
-- See the following paragraph for features
+- Refer to the following section for features
+- Refer to the demo app in the projects folder for implementation details.
 
 ## Features
 
@@ -43,3 +44,7 @@ Anyway, it gives to you some usefull store tools :
 - **getInitialFormState** : Retrieve initial form state
 - **createInitialStateFactory** : Create the initial form state
 - **createSelectorsFactory** : Create selectors to retrieve form information such as selectFormGroup, selectFormControls, selectFormGroupData, selectLastFocusedAutocompleteField, and selectLastFocusedAutocompleteData
+
+## Licence
+
+MIT

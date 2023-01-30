@@ -1,6 +1,24 @@
 {
   "name": "ngrx-forms-material",
   "version": "0.0.1",
+  "description": "Material UI bindings for ngrx-forms",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dotmobo/ngrx-forms-material.git"
+  },
+  "keywords": [
+    "ngrx-forms",
+    "ngrx",
+    "angular",
+    "material",
+    "forms"
+  ],
+  "author": "dotmobo",
+  "bugs": {
+    "url": "git+https://github.com/dotmobo/ngrx-forms-material.git"
+  },
+  "homepage": "https://github.com/dotmobo/ngrx-forms-material#readme",
   "peerDependencies": {
     "@angular/common": "^14.2.0",
     "@angular/core": "^14.2.0",
