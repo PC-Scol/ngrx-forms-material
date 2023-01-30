@@ -7,7 +7,7 @@ import { NgrxValueConverters, ValidationErrors } from 'ngrx-forms';
  * @param comp comp
  */
 function _validateBornedDate(
-  op: (tValue: Date, tComp: Date) => boolean,
+  op: (tValue: Date | null, tComp: Date | null) => boolean,
   comp: string
 ): (value: string) => ValidationErrors {
   const converter = NgrxValueConverters.dateToISOString.convertStateToViewValue;

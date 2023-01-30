@@ -28,7 +28,7 @@ export class NgrxAutocompleteConverter<TView, TState>
   /**
    * Convert the view into state for the store
    */
-  convertViewToStateValue(obj: TView): TState {
+  convertViewToStateValue(obj: TView | null | undefined): TState {
     return obj === undefined || obj === null || typeof obj === 'string'
       ? null
       : obj[this.identifierFieldName];

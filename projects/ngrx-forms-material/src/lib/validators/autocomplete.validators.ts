@@ -10,7 +10,7 @@ export function requiredAutocompleteValue(
 ): ValidationFn<string> {
   return (value: string): ValidationErrors => {
     const autocompleteErrors = autocompleteValue(seizedValue)(value);
-    return autocompleteErrors.noSelection
+    return autocompleteErrors['noSelection']
       ? autocompleteErrors
       : required(value);
   };

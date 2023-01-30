@@ -20,7 +20,7 @@ export function getInitialFormState<V>(
  * @param formId the ID of the form
  * @param initialData the initial data
  */
-export function createInitialStateFactory<V>(formId, initialData) {
+export function createInitialStateFactory<V>(formId: string, initialData: V) {
   function getInitialState(): NgrxFormState<V>;
   function getInitialState<S extends object>(
     additionalState: S
