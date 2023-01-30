@@ -54,8 +54,9 @@
       novalidate
       class="vertical-form"
     >
+      <h3>mat-datepicker in UTC</h3>
       <mat-form-field>
-        <mat-label>Birth date with UTC</mat-label>
+        <mat-label>Birth date</mat-label>
         <input
           matInput
           [ngrxFormControlState]="formState.controls.birthDate"
@@ -80,6 +81,40 @@
         </mat-error>
       </mat-form-field>
 
+      <h3>mat-autocomplete</h3>
+      <mat-form-field *ngIf="!!formState.controls.birthDate.value">
+        <mat-label>Birth country</mat-label>
+        <input
+          matInput
+          [ngrxFormControlState]="formState.controls.birthCountry"
+          [ngrxValueConverter]="countryConverter"
+          #birthCountry
+          required
+          name="birthCountry"
+          [matAutocomplete]="autoCountry"
+        />
+        <mat-autocomplete
+          autoActiveFirstOption
+          #autoCountry="matAutocomplete"
+          [displayWith]="displayCountry"
+        >
+          <mat-option
+            *ngFor="let country of filteredCountries$() | async"
+            [value]="country"
+          >
+            {{ country.label }}
+          </mat-option>
+        </mat-autocomplete>
+        <mat-hint>Press a key to search a country.</mat-hint>
+        <mat-error *ngIf="formState.errors['_birthCountry']?.required">
+          Birth country is required
+        </mat-error>
+        <mat-error *ngIf="formState.errors['_birthCountry']?.noSelection">
+          Birth country is not valid
+        </mat-error>
+      </mat-form-field>
+
+      <h3>mat-select</h3>
       <mat-form-field *ngIf="allFruits.length > 0">
         <mat-label>Fruits</mat-label>
         <mat-select
@@ -98,6 +133,7 @@
         </mat-error>
       </mat-form-field>
 
+      <h3>mat-select multiple</h3>
       <mat-form-field *ngIf="allVegetables.length > 0">
         <mat-label>Vegetables</mat-label>
         <mat-select

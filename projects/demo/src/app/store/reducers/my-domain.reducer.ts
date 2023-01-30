@@ -19,6 +19,7 @@ const initData: MyDomain = {
   birthDate: '1985-06-05',
   fruit: 'F1',
   vegetables: box(['V1', 'V2']),
+  birthCountry: 'C1',
 };
 
 export const formAdapter = createNgrxFormAdapter<MyDomain>(
@@ -33,6 +34,7 @@ export const initialState = formAdapter.getInitialState({
 export const formStateReducer = createFormStateReducerWithUpdate<MyDomain>(
   updateGroup<MyDomain>({
     birthDate: (controlState) => validate(controlState, required),
+    birthCountry: (controlState) => validate(controlState, required),
     fruit: (controlState) => validate(controlState, required),
   })
 );

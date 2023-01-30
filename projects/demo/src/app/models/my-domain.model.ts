@@ -1,7 +1,13 @@
 import { Boxed } from "ngrx-forms";
 
+export interface Country {
+  code: string;
+  label: string;
+}
+
 export interface MyDomain {
   birthDate?: string;
+  birthCountry?: string;
   fruit?: string;
   vegetables?: Boxed<string[]>
 }
@@ -20,4 +26,17 @@ export const vegetables = [
   { code: 'V3', label: 'potato' },
   { code: 'V4', label: 'onion' },
   { code: 'V5', label: 'cucumber' },
+]
+
+export const countries = [
+  { code: 'C1', label: 'Afghanistan' },
+  { code: 'C2', label: 'France' },
+  { code: 'C3', label: 'Germany' },
+  { code: 'C4', label: 'Italy' },
+  { code: 'C5', label: 'Japan' },
+  { code: 'C6', label: 'United States' },
+  { code: 'C7', label: 'United Kingdom' },
+  { code: 'C8', label: 'Spain' },
+  { code: 'C9', label: 'China' },
+  { code: 'C10', label: 'Russia' },
 ]
