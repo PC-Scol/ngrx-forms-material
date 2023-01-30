@@ -8,6 +8,11 @@ This project enhances compatibility between [Angular Material](https://github.co
   npm i ngrx-forms-material
 ```
 
+## Usage
+
+- Import **NgrxFormsMaterialModule** in your app
+- See the following paragraph for features
+
 ## Features
 
 The project aims to provide the following improvements:
