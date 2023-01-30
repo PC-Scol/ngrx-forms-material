@@ -5,7 +5,7 @@ import {
   updateGroup,
   validate,
 } from 'ngrx-forms';
-import { createNgrxFormAdapter, NgrxFormState } from 'ngrx-forms-material';
+import { autocompleteValue, createNgrxFormAdapter, NgrxFormState, requiredAutocompleteValue } from 'ngrx-forms-material';
 import { required } from 'ngrx-forms/validation';
 import { MyDomain } from '../../models/my-domain.model';
 
@@ -34,7 +34,7 @@ export const initialState = formAdapter.getInitialState({
 export const formStateReducer = createFormStateReducerWithUpdate<MyDomain>(
   updateGroup<MyDomain>({
     birthDate: (controlState) => validate(controlState, required),
-    birthCountry: (controlState) => validate(controlState, required),
+    birthCountry: (controlState) => validate(controlState, requiredAutocompleteValue(controlState.userDefinedProperties['autocomplete'])),
     fruit: (controlState) => validate(controlState, required),
   })
 );
