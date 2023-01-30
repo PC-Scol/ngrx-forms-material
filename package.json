@@ -3,21 +3,23 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "lint": "ng lint",
+    "start": "ng serve demo",
+    "build": "ng build ngrx-forms-material",
+    "watch": "ng build ngrx-forms-material --watch --configuration development",
+    "test": "ng test ngrx-forms-material",
+    "lint": "ng lint ngrx-forms-material",
     "publish": "cd dist/ngrx-forms-material && npm publish --registry=https://registry.npmjs.com/"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "^14.2.0",
+    "@angular/cdk": "^14.2.7",
     "@angular/common": "^14.2.0",
     "@angular/compiler": "^14.2.0",
     "@angular/core": "^14.2.0",
     "@angular/forms": "^14.2.0",
     "@angular/material": "^14.2.7",
+    "@angular/material-moment-adapter": "^14.2.7",
     "@angular/platform-browser": "^14.2.0",
     "@angular/platform-browser-dynamic": "^14.2.0",
     "@angular/router": "^14.2.0",
@@ -53,6 +55,7 @@
     "karma-jasmine-html-reporter": "~2.0.0",
     "ng-packagr": "^14.2.0",
     "typescript": "~4.7.2",
-    "@types/lodash-es": "^4.17.6"
+    "@types/lodash-es": "^4.17.6",
+    "@ngrx/store-devtools": "^14.3.2"
   }
 }
