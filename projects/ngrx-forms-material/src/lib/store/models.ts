@@ -50,10 +50,10 @@ export class NgrxAutocomplete {
    */
   constructor(controlState?: FormControlState<string>) {
     this.seized =
-      (controlState && controlState.userDefinedProperties.autocomplete) || '';
+      (controlState && controlState.userDefinedProperties['autocomplete']) || '';
     this.min =
       (controlState &&
-        controlState.userDefinedProperties.autocompleteMinChars) ||
+        controlState.userDefinedProperties['autocompleteMinChars']) ||
       0;
   }
 
