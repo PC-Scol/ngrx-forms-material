@@ -5,7 +5,7 @@
 // Converters
 export { NgrxAutocompleteConverter } from './lib/converters/autocomplete.converter';
 export { NgrxDateToISO8601, NgrxDateToISO8601UTC } from './lib/converters/dateonly.converter';
-export { NgrxMatSelectViewAdapter } from './lib/converters/select.converter';
+export { NgrxMatSelectViewAdapter } from './lib/adapters/select.adapter';
 
 // Directives
 export { AutocompleteInputDirective } from './lib/directives/autocompleteinput.directive';

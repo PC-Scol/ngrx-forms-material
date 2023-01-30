@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { AutocompleteInputDirective } from './directives/autocompleteinput.directive';
 import { CustomErrorStateMatcherDirective } from './directives/customerrorstatematcher.directive';
 import { DatepickerInputDirective } from './directives/datepickerinput.directive';
-import { NgrxMatSelectViewAdapter } from './converters/select.converter';
+import { NgrxMatSelectViewAdapter } from './adapters/select.adapter';
 
 const declarationsAndExports = [
   AutocompleteInputDirective,
