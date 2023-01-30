@@ -1,16 +1,23 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { NgrxFormsMaterialComponent } from './ngrx-forms-material.component';
+import { AutocompleteInputDirective } from './directives/autocompleteinput.directive';
+import { CustomErrorStateMatcherDirective } from './directives/customerrorstatematcher.directive';
+import { DatepickerInputDirective } from './directives/datepickerinput.directive';
+import { NgrxMatSelectViewAdapter } from './converters/select.converter';
 
+const declarationsAndExports = [
+  AutocompleteInputDirective,
+  DatepickerInputDirective,
+  CustomErrorStateMatcherDirective,
+  NgrxMatSelectViewAdapter,
+];
 
-
+/**
+ * Module that provides compatibility between ngrx-forms and Angular Material.
+ */
 @NgModule({
-  declarations: [
-    NgrxFormsMaterialComponent
-  ],
-  imports: [
-  ],
-  exports: [
-    NgrxFormsMaterialComponent
-  ]
+  imports: [CommonModule],
+  declarations: declarationsAndExports,
+  exports: declarationsAndExports,
 })
-export class NgrxFormsMaterialModule { }
+export class NgrxFormsMaterialModule {}

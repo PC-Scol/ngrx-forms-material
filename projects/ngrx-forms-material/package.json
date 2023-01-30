@@ -3,7 +3,12 @@
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^14.2.0",
-    "@angular/core": "^14.2.0"
+    "@angular/core": "^14.2.0",
+    "ngrx-forms": "^8.0.0",
+    "@ngrx/store": "^14.3.2",
+    "@angular/material": "^14.2.7",
+    "lodash-es": "^4.17.21",
+    "moment": "^2.29.4"
   },
   "dependencies": {
     "tslib": "^2.3.0"
