@@ -54,13 +54,30 @@
       novalidate
       class="vertical-form"
     >
+      <h3>mat-datepicker</h3>
+      <mat-form-field>
+        <mat-label>Now</mat-label>
+        <input
+          matInput
+          [ngrxFormControlState]="formState.controls.now"
+          [ngrxValueConverter]="dateConverter"
+          [matDatepicker]="nowDatePicker"
+          name="now"
+        />
+        <mat-datepicker-toggle
+          matSuffix
+          [for]="nowDatePicker"
+        ></mat-datepicker-toggle>
+        <mat-datepicker #nowDatePicker></mat-datepicker>
+      </mat-form-field>
+
       <h3>mat-datepicker in UTC</h3>
       <mat-form-field>
         <mat-label>Birth date</mat-label>
         <input
           matInput
           [ngrxFormControlState]="formState.controls.birthDate"
-          [ngrxValueConverter]="dateConverter"
+          [ngrxValueConverter]="dateUtcConverter"
           [matDatepicker]="birthDatePicker"
           required
           name="birthDate"

@@ -1,4 +1,5 @@
 import { Action } from '@ngrx/store';
+import * as moment from 'moment';
 import {
   box,
   createFormStateReducerWithUpdate,
@@ -16,6 +17,7 @@ export const MY_DOMAIN_FORM_ID = 'MY-DOMAIN-FORM-ID';
  * And then, synchronize it with the form.
  */
 const initData: MyDomain = {
+  now: moment().format('YYYY-MM-DD'),
   birthDate: '1985-06-05',
   fruit: 'F1',
   vegetables: box(['V1', 'V2']),

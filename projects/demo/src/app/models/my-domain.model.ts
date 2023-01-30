@@ -6,6 +6,7 @@ export interface Country {
 }
 
 export interface MyDomain {
+  now?: string;
   birthDate?: string;
   birthCountry?: string;
   fruit?: string;
