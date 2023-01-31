@@ -1,6 +1,5 @@
 import { NgrxDateToISO8601 } from '../converters/dateonly.converter';
-import * as moment_ from 'moment';
-const moment = moment_;
+import moment from 'moment';
 
 describe('Converter: DateOnlyToLocaleStringConverter', () => {
   const converter = new NgrxDateToISO8601();

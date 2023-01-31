@@ -1,12 +1,12 @@
 import { Action } from '@ngrx/store';
-import * as moment from 'moment';
+import moment from 'moment';
 import {
   box,
   createFormStateReducerWithUpdate,
   updateGroup,
   validate,
 } from 'ngrx-forms';
-import { autocompleteValue, createNgrxFormAdapter, NgrxFormState, requiredAutocompleteValue } from 'ngrx-forms-material';
+import { createNgrxFormAdapter, NgrxFormState, requiredAutocompleteValue } from 'ngrx-forms-material';
 import { required } from 'ngrx-forms/validation';
 import { MyDomain } from '../../models/my-domain.model';
 

@@ -1,5 +1,5 @@
 import { NgrxValueConverter, NgrxValueConverters } from 'ngrx-forms';
-import * as moment from 'moment';
+import moment from 'moment';
 
 /**
  * Converter for dates in ISO8601 format for ngrx-forms

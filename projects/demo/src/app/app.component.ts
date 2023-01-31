@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { select, Store } from '@ngrx/store';
 import { includes, toLower } from 'lodash-es';
-import * as moment from 'moment';
+import moment from 'moment';
 import { FormGroupState } from 'ngrx-forms';
 import {
   NgrxAutocompleteConverter,
