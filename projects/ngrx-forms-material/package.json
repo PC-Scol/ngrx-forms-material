@@ -26,7 +26,8 @@
     "@ngrx/store": "^14.3.2",
     "@angular/material": "^14.2.7",
     "lodash-es": "^4.17.21",
-    "moment": "^2.29.4"
+    "moment": "^2.29.4",
+    "moment-timezone": "^0.5.33"
   },
   "dependencies": {
     "tslib": "^2.3.0"
