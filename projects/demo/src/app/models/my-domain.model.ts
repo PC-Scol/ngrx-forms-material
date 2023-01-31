@@ -11,6 +11,9 @@ export interface MyDomain {
   birthCountry?: string;
   fruit?: string;
   vegetables?: Boxed<string[]>
+  gender?: string;
+  name?: string;
+  acceptTerms?: boolean;
 }
 
 export const fruits = [

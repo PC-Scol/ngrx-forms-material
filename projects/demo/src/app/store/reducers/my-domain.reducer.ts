@@ -22,6 +22,9 @@ const initData: MyDomain = {
   fruit: 'F1',
   vegetables: box(['V1', 'V2']),
   birthCountry: 'C1',
+  gender: 'F',
+  name: null,
+  acceptTerms: false,
 };
 
 export const formAdapter = createNgrxFormAdapter<MyDomain>(
@@ -38,6 +41,8 @@ export const formStateReducer = createFormStateReducerWithUpdate<MyDomain>(
     birthDate: (controlState) => validate(controlState, required),
     birthCountry: (controlState) => validate(controlState, requiredAutocompleteValue(controlState.userDefinedProperties['autocomplete'])),
     fruit: (controlState) => validate(controlState, required),
+    gender: (controlState) => validate(controlState, required),
+    name: (controlState) => validate(controlState, required),
   })
 );
 
