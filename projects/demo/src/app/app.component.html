@@ -44,6 +44,13 @@
           </mat-error>
         </mat-form-field>
 
+        <h3>mat-checkbox</h3>
+        <mat-checkbox
+          [ngrxFormControlState]="formState.controls.acceptTerms"
+          name="acceptTerms"
+          >Accept terms</mat-checkbox
+        >
+
         <h3>mat-autocomplete</h3>
         <mat-form-field *ngIf="!!formState.controls.birthDate.value">
           <mat-label>Birth country</mat-label>
@@ -76,13 +83,6 @@
             Birth country is not valid
           </mat-error>
         </mat-form-field>
-
-        <h3>mat-checkbox</h3>
-        <mat-checkbox
-          [ngrxFormControlState]="formState.controls.acceptTerms"
-          name="acceptTerms"
-          >Accept terms</mat-checkbox
-        >
       </div>
       <div class="vertical-fields">
         <h3>mat-datepicker</h3>
