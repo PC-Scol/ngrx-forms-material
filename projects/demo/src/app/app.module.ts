@@ -11,6 +11,8 @@ import { AppComponent } from './app.component';
 import { MaterialModule } from './material/material.module';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { reducers } from './store';
+import { MatDatetimepickerModule } from '@mat-datetimepicker/core';
+import { MatMomentDatetimeModule } from '@mat-datetimepicker/moment';
 
 @NgModule({
   declarations: [AppComponent],
@@ -20,6 +22,8 @@ import { reducers } from './store';
     BrowserAnimationsModule,
     MaterialModule,
     MatMomentDateModule,
+    MatDatetimepickerModule,
+    MatMomentDatetimeModule,
     NgrxFormsModule,
     NgrxFormsMaterialModule,
     StoreModule.forRoot({}),

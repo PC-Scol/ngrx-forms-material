@@ -87,21 +87,20 @@
       <div class="vertical-fields">
         <h3>mat-datepicker</h3>
         <mat-form-field>
-          <mat-label>Now</mat-label>
+          <mat-label>Today</mat-label>
           <input
             matInput
-            [ngrxFormControlState]="formState.controls.now"
+            [ngrxFormControlState]="formState.controls.today"
             [ngrxValueConverter]="dateConverter"
-            [matDatepicker]="nowDatePicker"
-            name="now"
+            [matDatepicker]="todayDatePicker"
+            name="today"
           />
           <mat-datepicker-toggle
             matSuffix
-            [for]="nowDatePicker"
+            [for]="todayDatePicker"
           ></mat-datepicker-toggle>
-          <mat-datepicker #nowDatePicker></mat-datepicker>
+          <mat-datepicker #todayDatePicker></mat-datepicker>
         </mat-form-field>
-
         <h3>mat-datepicker in UTC</h3>
         <mat-form-field>
           <mat-label>Birth date</mat-label>
@@ -129,6 +128,31 @@
           </mat-error>
           <mat-error *ngIf="formState.errors['_birthDate']?.bornedDate">
             Birth date is invalid
+          </mat-error>
+        </mat-form-field>
+
+        <h3>mat-datetimepicker</h3>
+        <mat-form-field>
+          <mat-datetimepicker-toggle
+            matSuffix
+            [for]="nowPicker"
+          ></mat-datetimepicker-toggle>
+          <mat-datetimepicker
+            #nowPicker
+            type="datetime"
+            [openOnFocus]="true"
+            [timeInterval]="5"
+          ></mat-datetimepicker>
+          <mat-label>Now</mat-label>
+          <input
+            matInput
+            [ngrxFormControlState]="formState.controls.now"
+            [ngrxValueConverter]="dateTimeConverter"
+            [matDatetimepicker]="nowPicker"
+            name="now"
+          />
+          <mat-error *ngIf="formState.controls.now.isInvalid">
+            Now is invalid
           </mat-error>
         </mat-form-field>
 

@@ -25,6 +25,11 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { MatOptionModule } from '@angular/material/core';
+import { MatSortModule } from '@angular/material/sort';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
 
 @NgModule({
     imports: [
@@ -53,7 +58,12 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
         MatMenuModule,
         MatBadgeModule,
         MatSnackBarModule,
-        MatProgressBarModule
+        MatProgressBarModule,
+        MatOptionModule,
+        MatSortModule,
+        MatTableModule,
+        MatPaginatorModule,
+        MatButtonToggleModule,
     ],
     exports: [
         MatInputModule,
@@ -81,7 +91,12 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
         MatMenuModule,
         MatBadgeModule,
         MatSnackBarModule,
-        MatProgressBarModule
+        MatProgressBarModule,
+        MatOptionModule,
+        MatSortModule,
+        MatTableModule,
+        MatPaginatorModule,
+        MatButtonToggleModule,
     ]
 })
 export class MaterialModule {}

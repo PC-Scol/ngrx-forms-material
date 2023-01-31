@@ -7,6 +7,7 @@ import {
   NgrxAutocompleteConverter,
   NgrxDateToISO8601UTC,
 } from 'ngrx-forms-material';
+import { NgrxDateTimeZoneToISO8601 } from 'projects/ngrx-forms-material/src/lib/converters/dateonly.converter';
 import { NgrxDateToISO8601 } from 'projects/ngrx-forms-material/src/public-api';
 import { filter, map, Observable, switchMap } from 'rxjs';
 import {
@@ -35,6 +36,7 @@ export class AppComponent implements OnInit {
   dateConverter: NgrxDateToISO8601;
   dateUtcConverter: NgrxDateToISO8601UTC;
   countryConverter: NgrxAutocompleteConverter<Country, string>;
+  dateTimeConverter: NgrxDateTimeZoneToISO8601;
 
   current_year = moment().year();
   minDate = moment([this.current_year - 120, 0, 1]);
@@ -50,6 +52,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.dateConverter = new NgrxDateToISO8601();
     this.dateUtcConverter = new NgrxDateToISO8601UTC();
+    this.dateTimeConverter = new NgrxDateTimeZoneToISO8601('Europe/Paris');
     this.countryConverter = new NgrxAutocompleteConverter(
       this.allCountries,
       'code'

@@ -23,7 +23,8 @@ export const MY_DOMAIN_FORM_ID = 'MY-DOMAIN-FORM-ID';
  * And then, synchronize it with the form.
  */
 const initData: MyDomain = {
-  now: moment().format('YYYY-MM-DD'),
+  today: moment().format('YYYY-MM-DD'),
+  now: moment().tz('Europe/Paris').format(),
   birthDate: '1985-06-05',
   fruit: 'F1',
   vegetables: box(['V1', 'V2']),

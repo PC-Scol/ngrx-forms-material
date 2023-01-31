@@ -27,6 +27,10 @@ The project aims to provide the following improvements:
   - ISO8601 date conversion with **NgrxDateToISO8601** for use with **ngrxValueConverter** directive
   - ISO8601 UTC date conversion with **NgrxDateToISO8601UTC** for use with **ngrxValueConverter** directive
 
+- [mat-datetimepicker](https://github.com/kuhnroyal/mat-datetimepicker):
+  - Compatibility for elements with selector: ```input[ngrxFormControlState][matDatetimepicker]```
+  - ISO8601 datetime with timezone conversion with **NgrxDateTimeZoneToISO8601** for use with **ngrxValueConverter** directive
+
 - [mat-select](https://material.angular.io/components/select/overview) :
   - Compatibility for elements with selector: ```mat-select[ngrxFormControlState]```
   - Support for *multiple* selectors

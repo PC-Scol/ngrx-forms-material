@@ -48,6 +48,8 @@
     "lodash-es": "^4.17.21",
     "moment": "^2.29.4",
     "moment-timezone": "^0.5.33",
+    "@mat-datetimepicker/core": "^10.1.1",
+    "@mat-datetimepicker/moment": "^10.1.1",
     "ngrx-forms": "^8.0.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
