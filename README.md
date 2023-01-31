@@ -13,6 +13,7 @@ This project enhances compatibility between [Angular Material](https://github.co
 ## Usage
 
 - Import **NgrxFormsMaterialModule** in your app
+- Put **"allowSyntheticDefaultImports": true** in your **tsconfig.json** for *moment.js* import
 - Refer to the following section for features
 - Refer to the demo app in the projects folder for implementation details.
 
