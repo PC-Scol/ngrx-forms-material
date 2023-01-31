@@ -127,6 +127,9 @@
           <mat-error *ngIf="formState.errors['_birthDate']?.required">
             Birth date is required
           </mat-error>
+          <mat-error *ngIf="formState.errors['_birthDate']?.bornedDate">
+            Birth date is invalid
+          </mat-error>
         </mat-form-field>
 
         <h3>mat-select</h3>
