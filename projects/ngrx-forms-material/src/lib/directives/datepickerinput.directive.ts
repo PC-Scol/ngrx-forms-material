@@ -1,7 +1,7 @@
 import { Directive, Input, OnInit } from '@angular/core';
 import { ActionsSubject } from '@ngrx/store';
 import { FormControlState, SetUserDefinedPropertyAction } from 'ngrx-forms';
-import { MatInput } from '@angular/material/input';
+import { MatLegacyInput as MatInput } from '@angular/material/legacy-input';
 
 /**
  * Directive for compatibility of datepickers with ngrx-forms

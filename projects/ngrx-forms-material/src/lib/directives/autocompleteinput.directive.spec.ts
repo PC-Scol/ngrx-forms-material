@@ -5,7 +5,7 @@ import {
   tick,
   fakeAsync,
 } from '@angular/core/testing';
-import { MatInputModule } from '@angular/material/input';
+import { MatLegacyInputModule as MatInputModule } from '@angular/material/legacy-input';
 import { Action, ActionsSubject } from '@ngrx/store';
 import {
   createFormControlState,

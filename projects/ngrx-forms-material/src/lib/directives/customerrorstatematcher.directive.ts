@@ -1,7 +1,7 @@
 import { Directive, Host, Input, Optional } from '@angular/core';
-import { MatChipList } from '@angular/material/chips';
-import { MatInput } from '@angular/material/input';
-import { MatSelect } from '@angular/material/select';
+import { MatLegacyChipList as MatChipList } from '@angular/material/legacy-chips';
+import { MatLegacyInput as MatInput } from '@angular/material/legacy-input';
+import { MatLegacySelect as MatSelect } from '@angular/material/legacy-select';
 import { FormControlState } from 'ngrx-forms';
 
 /**
