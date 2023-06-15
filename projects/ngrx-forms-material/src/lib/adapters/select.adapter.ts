@@ -1,5 +1,5 @@
 import { Directive, forwardRef } from '@angular/core';
-import { MatLegacySelect as MatSelect } from '@angular/material/legacy-select';
+import { MatSelect } from '@angular/material/select';
 import { FormViewAdapter, NGRX_FORM_VIEW_ADAPTER } from 'ngrx-forms';
 
 /**

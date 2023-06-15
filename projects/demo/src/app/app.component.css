@@ -31,11 +31,3 @@
 .vertical-fields > * {
   margin-bottom: 1em;
 }
-
-mat-radio-button {
-  margin-right: 0.7em;
-}
-
-mat-radio-group label {
-  margin-right: 0.7em;
-}

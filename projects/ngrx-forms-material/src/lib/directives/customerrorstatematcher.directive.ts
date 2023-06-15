@@ -1,7 +1,7 @@
 import { Directive, Host, Input, Optional } from '@angular/core';
-import { MatLegacyChipList as MatChipList } from '@angular/material/legacy-chips';
-import { MatLegacyInput as MatInput } from '@angular/material/legacy-input';
-import { MatLegacySelect as MatSelect } from '@angular/material/legacy-select';
+import { MatChipGrid} from '@angular/material/chips';
+import { MatInput } from '@angular/material/input';
+import { MatSelect } from '@angular/material/select';
 import { FormControlState } from 'ngrx-forms';
 
 /**
@@ -43,6 +43,6 @@ export class CustomErrorStateMatcherDirective {
   constructor(
     @Host() @Optional() private input: MatInput,
     @Host() @Optional() private select: MatSelect,
-    @Host() @Optional() private chipList: MatChipList
+    @Host() @Optional() private chipList: MatChipGrid
   ) {}
 }
