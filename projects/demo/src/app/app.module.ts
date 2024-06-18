@@ -28,7 +28,7 @@ import { MatMomentDatetimeModule } from '@mat-datetimepicker/moment';
     NgrxFormsMaterialModule,
     StoreModule.forRoot({}),
     StoreModule.forFeature('myState', reducers),
-    StoreDevtoolsModule.instrument({ maxAge: 100 })
+    StoreDevtoolsModule.instrument({ maxAge: 100 , connectInZone: true})
   ],
   providers: [
     { provide: MAT_MOMENT_DATE_ADAPTER_OPTIONS, useValue: { useUtc: true } },
