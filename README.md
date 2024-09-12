@@ -54,4 +54,4 @@ Anyway, it gives to you some usefull store tools :
 
 ## Licence
 
-MIT
+Apache License 2.0

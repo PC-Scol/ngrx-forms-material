@@ -2,7 +2,7 @@
   "name": "ngrx-forms-material",
   "version": "0.5.0",
   "description": "Material UI bindings for ngrx-forms",
-  "license": "MIT",
+  "license": "Apache License 2.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dotmobo/ngrx-forms-material.git"
