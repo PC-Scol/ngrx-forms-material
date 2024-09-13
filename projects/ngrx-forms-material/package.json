@@ -5,7 +5,7 @@
   "license": "Apache License 2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dotmobo/ngrx-forms-material.git"
+    "url": "git+https://github.com/PC-Scol/ngrx-forms-material.git"
   },
   "keywords": [
     "ngrx-forms",
@@ -16,9 +16,9 @@
   ],
   "author": "dotmobo",
   "bugs": {
-    "url": "git+https://github.com/dotmobo/ngrx-forms-material.git"
+    "url": "git+https://github.com/PC-Scol/ngrx-forms-material.git"
   },
-  "homepage": "https://github.com/dotmobo/ngrx-forms-material#readme",
+  "homepage": "https://github.com/PC-Scol/ngrx-forms-material#readme",
   "peerDependencies": {
     "@angular/common": "^16.2.12",
     "@angular/core": "^16.2.12",
